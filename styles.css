@@ -1,0 +1,218 @@
+/* --- SF PRO TEXT (Using Display Regular as a temporary substitute) --- */
+@font-face {
+    font-family: 'SF Pro Text Regular';
+    src: url('fonts/sf-pro-display_regular.woff2') format('woff2'); /* This file exists! */
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+/* --- SF PRO TEXT (Using your working Semibold file as the fallback) --- */
+@font-face {
+    font-family: 'SF Pro Text';
+    src: url('fonts/sf-pro-text_semibold.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SF Pro Text';
+    src: url('fonts/sf-pro-text_semibold.woff2') format('woff2');
+    font-weight: 600;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    background-color: #FFFFFF;
+
+}
+
+header {
+    height: 50px;
+}
+
+
+nav li a {
+    display: block;
+    color: #131313;
+    text-align: center;
+    padding-right: 25px;
+    padding-left: 25px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    text-decoration: none;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #FFFFFF;
+
+    display: flex;
+    justify-content: flex-start;
+    min-height: 48px;
+
+}
+
+nav li a:hover {
+    background-color: #dfdddd;
+    opacity: 0.7;
+}
+
+nav {
+    place-items: center;
+    min-height: 48px;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    opacity: 0.7;
+}
+
+nav p {
+    font-size: 12px;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+}
+
+nav img {
+    height: 20px;
+    width: auto;
+    display: block;
+}
+/* hero */
+.hero {
+    margin: 15px;
+}
+
+.hero-title {
+    font-family: 'SF Pro Text';
+    font-size: 30px;
+    color: black;
+    padding-bottom: 10px;
+}
+
+.hero-paragraph {
+    font-family: 'SF Pro Text Regular';
+    font-size: 17px;
+    color: #717171;
+}
+
+.button-pill {
+    margin: 10px;
+    width: 200px;
+    height: 50px;
+    font-family: 'SF Pro Text';
+    border-radius: 30px;
+    border: 0;
+}   
+
+.button-pill--blue {
+    background-color: #3525CD;
+    color: white;
+    font-size: 17px;
+}
+
+.button-pill--light-blue {
+    background-color: #E2E7FF;
+}
+/* Grid */
+
+.grid {
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    margin: 15px;
+    padding: 15px;
+    height: 60px;
+    width: auto;
+    background-color: #F5F5F7;
+    display: grid;
+    justify-content: center;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: flex-start;
+    text-align: center;
+    border-radius: 10px;
+    
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+}
+
+.header-text {
+    font-size: 40px;
+    font: 'SF Pro Text';
+    color: #3525CD;
+}
+
+.p-text1 {
+    color: black;
+    font-size: 20px;
+    font-family: 'SF Pro Text';
+}
+
+.p-text2 {
+    color: #717171;
+    font-size: 20px;
+    font-family: 'SF Pro Text';
+}
+
+.grid2x1-container {
+    padding-top: 10px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+
+    height: 600px;
+    padding-top: 40px;
+}
+
+.product-grid {
+    padding-top: 50px;
+    
+    display: flex;
+    flex-direction: column; 
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    max-width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+.product-grid--white {
+    background-color: #F5F5F7;
+}
+
+
+.product-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    gap: 12px;          
+    margin-top: 15px;
+    width: 100%;
+}
+
+
+.learn, .shop {
+    font-size: 14px;   
+    font-weight: 400;
+    font-family: 'SF Pro Text';
+    
+    height: 40px;
+    width: 150px;
+    border-radius: 980px; 
+    cursor: pointer; 
+    
+    
+}
