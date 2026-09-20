@@ -7,10 +7,10 @@
         <nav>
             <ul>
                 <li> <a> <img src="img/OmniToolLogo.png" alt="OmniToolLogo"> </a></li>
-                <li> <p> <a href="#"> Overview & Hub </a> </p> </li>
+                <li> <p> <a href="index.html"> Overview & Hub </a> </p> </li>
                 <li> <p> <a href="calculator.html"> Quick Math </a> </p> </li>
                 <li> <p> <a href="lifetools.html"> Life Tools </a> </p> </li>
-                <li> <p> <a href="#"> Play & Focus </a> </p> </li>
+                <li> <p> <a href="playandfocus.html"> Play & Focus </a> </p> </li>
             </ul>
         </nav>
 
@@ -21,7 +21,7 @@
                 <div class="icon-badge"> temp </div>
                 <div class="card-header-titles">
                     <h2> Temperature Studio </h2>
-                    <p>Precision thermodynamic scale conversion & landmark presets </p>
+                    <p> Precision thermodynamic scale conversion & landmark presets </p>
                 </div>  
 
             </div>
@@ -101,6 +101,83 @@
                     <span class="preset-subtitle"> 100°C / 212°F</span>   
                 </button>
             </div>
+        </div> 
 
+        <!-- Age -->
+        <div class="age-card">
+            <div class="card-header">
+                <div class="icon-badge"> Time </div>
+                <div class="card-header-titles"> 
+                    <h1> Age & Horizon </h1>
+                    <p> Chronological milestone <br> breakdown </p>
+                </div>
+                
+            </div>
+
+            <!-- Slider -->
+            <div class="birthyear">
+                <div class="birthyear-legend">
+                    <h2> Birth year </h2>
+                    <h3> 1998 </h3>
+                </div>
+                <div class="birthyear-slider">
+                    <button class="yearbutton minus"> - </button>
+                    <input type="range" min="1926" max="2026" value="1998">
+                    <button class="yearbutton plus"> + </button>
+                </div>
+            </div>
+
+            <div class="life-lived">
+                <div class="life-lived-group">
+                    <h2> Solar Cycles</h2>
+                    <div class="amount-unit">
+                        <span class="life-lived-amount solar-cycles-amount"> 28</span>
+                        <span class="life-lived-unit solar-cycles-unit"> years </span>
+
+                    </div>
+                </div>
+                <div class="life-lived-group">
+                    <h3> Days lived</h3>
+                    <div class="amount-unit">
+                        <span class="life-lived-amount days-lived-amount"> 10,367</span>
+                        <span class="life-lived-unit days-lived--unit"> days </span>
+                    </div>
+                    <p> ~227,904 hours </p>
+                </div>
+            </div>
+
+            <div class="count-down">
+                <div class="count-down-header">
+                    <h2> Days to next Horizon </h2>
+                    <p> 102 days </p>
+                </div>
+                <div class="multi-progress-bar">
+                    <div class="progress-part" style="width: 15%;"> </div>
+                    <div class="progress-remainder" style="width: 85%;"> </div>
+                </div>
+                <div class="count-down-footer">
+                    <h2> Cycle start </h2>
+                    <p> Turning 29 </p>
+                </div>
+            </div>
+        </div>  
+        <div class="decision-card">
+            <div class="card-header">
+                <div class="icon-badge"> temp </div>
+                <div class="card-header-titles">
+                    <h2> Decision Arbiter </h2>
+                    <p> Bypass cognitive paralysis instantly </p>
+                </div>
+            </div>
+            <div class="decisions">
+                <div class="decision decision--A">
+                    <p> <span class="key-decision key-decision--green"> A </span> Deep Focus Session </p>
+                </div>
+                <div class="decision decision--B">
+                    <p> <span class="key-decision key-decision--blue"> B </span> 30 Minute Outdoor Walk </p>
+                </div>
+                    <button class="resolve-button"> Resolve Dillema </button>
+            </div>
+        </div>
     </body>
 </html>
