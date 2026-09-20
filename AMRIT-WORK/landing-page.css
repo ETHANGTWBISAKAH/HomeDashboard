@@ -146,7 +146,7 @@ body {
     margin-bottom: 40px;
 }
 
-.devloper-card {
+.developer-card {
     display: flex;
     align-items: center;
     gap: 12px;
@@ -177,7 +177,7 @@ body {
     color: #94a3b8;
 }
 
-.devider-line{
+.divider-line{
     width:1px;
     height:40;
     background: rgba(225, 225, 225, 0.2);
