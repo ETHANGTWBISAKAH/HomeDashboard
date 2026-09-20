@@ -94,7 +94,7 @@ body {
     font-family: 'SF Pro Text Regular';
 }
 .calculator-card {
-    background-color: #FFFFF;
+    background-color: #FFF;
     padding: 20px;
     border-radius: 20px;
     margin: 100px;
@@ -405,3 +405,15 @@ body {
 }
 /* Percentage card */
 
+
+
+
+
+
+
+/* changes made by amrit sood  */
+
+.progress-remainder{
+    background-color:#89F5E7;
+    height:100%;
+}
