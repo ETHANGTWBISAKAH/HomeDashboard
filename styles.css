@@ -129,7 +129,7 @@ nav img {
     grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
     margin: 15px;
     padding: 15px;
-    height: 60px;
+    height: auto;
     width: auto;
     background-color: #F5F5F7;
     display: grid;
@@ -146,6 +146,7 @@ nav img {
     display: flex;
     flex-direction: column;
     text-align: justify;
+    align-items: center;
 }
 
 .header-text {
@@ -166,53 +167,31 @@ nav img {
     font-family: 'SF Pro Text';
 }
 
+/* Grid 2 */
+
 .grid2x1-container {
-    padding-top: 10px;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px;
+
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 24px;
-
-    height: 600px;
-    padding-top: 40px;
+    background-color: red;
+    height: auto;
 }
 
 .product-grid {
-    padding-top: 50px;
-    
     display: flex;
     flex-direction: column; 
-    justify-content: flex-start;
+    justify-content: space-between;
     align-items: center;
     text-align: center;
     max-width: 100%;
     height: auto;
-    overflow: hidden;
 }
 
 .product-grid--white {
-    background-color: #F5F5F7;
+    background-color: #FFFF;
 }
 
-
-.product-button {
-    display: flex;
-    justify-content: center;
-    align-items: center;  
-    gap: 12px;          
-    margin-top: 15px;
-    width: 100%;
-}
-
-
-.learn, .shop {
-    font-size: 14px;   
-    font-weight: 400;
-    font-family: 'SF Pro Text';
-    
-    height: 40px;
-    width: 150px;
-    border-radius: 980px; 
-    cursor: pointer; 
-    
-    
-}

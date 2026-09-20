@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="calculatorStyles.css">
+    </head>
+    <body>
+        <nav>
+            <ul>
+                <li> <a> <img src="img/OmniToolLogo.png" alt="OmniToolLogo"> </a></li>
+                <li> <p> <a href="index.html"> Overview & Hub </a> </p> </li>
+                <li> <p> <a href="#"> Quick Math </a> </p> </li>
+                <li> <p> <a href="lifetools.html"> Life Tools </a> </p> </li>
+                <li> <p> <a href="#"> Play & Focus </a> </p> </li>
+            </ul>
+        </nav>
+
+        <header> 
+            
+        </header>
+
+        <div class="title">
+            <h1 class="title-text"> Quick Math Studio </h1>
+            <p class="title-paragraph"> Instant math keypad, dynamic, percentage drifts and ratio insights </p>
+        </div>
+        
+        <div class="calculator-card">
+            <div id="calc-display" > 0 </div>
+
+            <!-- Keyboard grid -->
+             <div class="calculator-keyboard">
+                <!-- Button operator -->
+                <button class="button button--essential" id="C" onclick=""> C </button>
+                <button class="button button--essential" onclick=""> del  </button>
+                <button class="button button--essential" id="percent" onclick=""> % </button>
+                <button class="button button--operator" onclick=""> : </button> 
+                <!-- Button nums -->
+
+                <!-- Row 1 -->
+                <button class="button" onclick=""> 7 </button> 
+                <button class="button" onclick=""> 8 </button> 
+                <button class="button" onclick=""> 9 </button> 
+                <button class="button button--operator" onclick=""> x </button>
+
+                <!-- Row 2 -->
+
+                <button class="button" onclick=""> 4 </button> 
+                <button class="button" onclick=""> 5 </button> 
+                <button class="button" onclick=""> 6 </button> 
+                <button class="button button--operator" onclick=""> - </button>
+
+                <!-- Row 3 -->
+
+                <button class="button" onclick=""> 1 </button> 
+                <button class="button" onclick=""> 2 </button> 
+                <button class="button" onclick=""> 3 </button> 
+                <button class="button button--operator" onclick=""> + </button>
+
+                <!-- Row 4 -->
+                <button class="button button--0" onclick=""> 0 </button> 
+                
+                <button class="button button--operator" onclick=""> = </button>
+             </div>
+        </div>
+
+        <!-- Feel Free to change the colours and begin doing the JS -->
+        <div class="proportion-card">
+            <div class="card-header"> 
+                <div class="icon-badge"> % </div>
+                <div class="card-header-titles">
+                    <h2> Proportion Finder </h2>
+                    <p> Calculate exact shares, commisions tips and dicsounts </p>
+                </div>  
+
+            </div>
+           
+            <div class="input-section">
+                <div class="input-group">
+                    <h1> Percentage </h1>
+                    <div class="input-field">
+                        <input type="text" value="15">
+                        <span class="suffix"> % </span>
+                    </div>
+                </div>
+                
+                <div class="input-group">
+                    <h1> Base price </h1>
+                    <div class="input-field">
+                        <span class="prefix"> $ </span>
+                        <input type="text" value="15">
+                    </div>
+                </div>
+            </div>
+            <div class="slider-section"> 
+                <div class="slider-group"> 
+                    <span> Fluid percentage sweep </span>
+                    <span class="range-text"> 0% to 100% </span>
+                </div>
+                <input type="range" min="0" max="100" value="15" class="range-slider">
+            </div>
+            
+            <!-- Preset -->
+            <span class="presets-label"> YUNG SUKA MBE EVELYN </span>
+            <div class="presets-buttons">
+                <button class="preset-button"> +5% </button>
+                <button class="preset-button"> +10% </button>
+                <button class="preset-button preset-button--active"> +15% </button>
+                <button class="preset-button"> +20% </button>
+                <button class="preset-button"> +25% </button>
+                <button class="preset-button"> +50% </button>
+            </div>
+
+            <!-- Distribution bar -->
+            <div class="distribution-bar"> 
+                <div class="dist-header">
+                    <span> Proportion Distribution </span>
+                    <div class="dist-legend"> 
+                        <span class="dot dot--blue"> </span> Part (15%)
+                        <span class="dot dot--cyan"> </span> Remainder (85%)
+                    </div>
+                </div>
+                <div class="multi-progress-bar">
+                    <div class="progress-part" style="width: 15%;"> </div>
+                    <div class="progress-remainder" style="width: 85%;"> </div>
+                </div>
+            </div>
+
+            <!-- Output -->
+            <div class="output-grid">
+                <div class="output-section">
+                    <span class="out out-title"> Calculated Part </span>
+                    <span class="out out-value out-value--blue"> $38.00 </span>
+                    <span class="out out-sub"> Result value </span>
+                </div>
+                <div class="output-section">
+                    <span class="out out-title"> Remaining rest </span>
+                    <span class="out out-value out-value--green"> $38.00 </span>
+                    <span class="out out-sub"> After deduction </span>
+                </div>
+                <div class="output-section">
+                    <span class="out out-title"> Total sum </span>
+                    <span class="out out-value out-value--black"> $260.00 </span>
+                    <span class="out out-sub"> Base + Portion </span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Percentage card -->
+        <div class="percentage-card">
+            <div class="card-header"> 
+                <div class="icon-badge"> -> </div>
+                <div class="card-header-titles">
+                    <h2> Percentage Change & Drift</h2>
+                    <p> Measure delta between initial value A and value B</p>
+                </div>  
+            </div>
+            <div class="input-section">
+                <div class="input-group">
+                    <h1> Initial Value (A) </h1>
+                    <div class="input-field">
+                        <input type="text" value="15">
+                        <span class="suffix"> % </span>
+                    </div>
+                </div>
+                
+                <div class="input-group">
+                    <h1> Final Value (B) </h1>
+                    <div class="input-field">
+                        <span class="prefix"> $ </span>
+                        <input type="text" value="15">
+                    </div>
+                </div>
+            </div>
+
+             <div class="output-grid">
+                <div class="output-section">
+                    <span class="out-title"> Calculated Part </span>
+                    <span class="out-value out-value--blue"> $38.00 </span>
+                    <span class="out-sub"> Result value </span>
+                </div>
+                <div class="output-section">
+                    <span class="out-title"> Remaining rest </span>
+                    <span class="out-value out-value--green"> $38.00 </span>
+                    <span class="out-sub"> After deduction </span>
+                </div>
+                <div class="output-section">
+                    <span class="out-title"> Total sum </span>
+                    <span class="out-value out-value--black"> $260.00 </span>
+                    <span class="out-sub"> Base + Portion </span>
+                </div>
+                <!-- WIP NOT DONE! -->
+            </div>
+        </div>
+    </body>
+</html>

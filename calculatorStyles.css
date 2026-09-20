@@ -1,0 +1,408 @@
+/* --- SF PRO TEXT (Using Display Regular as a temporary substitute) --- */
+@font-face {
+    font-family: 'SF Pro Text Regular';
+    src: url('fonts/sf-pro-display_regular.woff2') format('woff2'); /* This file exists! */
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* --- SF PRO TEXT (Using your working Semibold file as the fallback) --- */
+@font-face {
+    font-family: 'SF Pro Text';
+    src: url('fonts/sf-pro-text_semibold.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SF Pro Text';
+    src: url('fonts/sf-pro-text_semibold.woff2') format('woff2');
+    font-weight: 600;
+    font-style: normal;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+nav li a {
+    display: block;
+    color: #131313;
+    text-align: center;
+    padding-right: 25px;
+    padding-left: 25px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    text-decoration: none;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #FFFFFF;
+
+    display: flex;
+    justify-content: flex-start;
+    min-height: 48px;
+
+}
+
+nav li a:hover {
+    background-color: #dfdddd;
+    opacity: 0.7;
+}
+
+nav {
+    place-items: center;
+    min-height: 48px;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    opacity: 0.7;
+}
+
+nav p {
+    font-size: 12px;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+}
+
+nav img {
+    height: 20px;
+    width: auto;
+    display: block;
+}
+
+body {
+    background-color: #FAF8FF;
+}
+
+/* calculator */
+.title-text {
+    font-family: 'SF Pro Text';
+
+}
+
+.title-paragraph {
+    font-family: 'SF Pro Text Regular';
+}
+.calculator-card {
+    background-color: #FFFFF;
+    padding: 20px;
+    border-radius: 20px;
+    margin: 100px;
+    box-shadow: inset 0 1px 2px rgba(255, 255, 255, 0.8), 0 4px 12px rgba(0, 0, 0, 0.03);
+}
+
+#calc-display {
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    overflow: hidden;
+    background-color: #F2F3FF;
+    color: black;
+    font-family: 'SF Pro Text';
+    height: 100px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.calculator-keyboard {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 8px;
+    height: auto;
+}
+
+
+.button {
+    background-color: #FFFF;
+    border-radius: 8px;
+    border: 0;
+    cursor: pointer;
+    height: 40px;
+    width: auto;
+    font-family: 'SF Pro Text';
+}
+
+.button--0 {
+    grid-column: span 3;
+}
+.button--clear {
+    background-color: red;
+}
+.button--operator {
+    background-color: #4F46E5;
+    color: #FFFF;
+}
+
+.button--essential {
+    background-color: #EAEDFF;
+}
+.button:hover {
+    opacity: 0.5;
+}
+
+#C {
+    color: red;
+}
+
+#percent {
+    color: #655BDA
+}
+
+/* Presets */
+
+.proportion-card, .percentage-card {
+    background-color: #FFFFFF;
+    border-radius: 20px;
+    margin: 20px;
+    padding: 20px;
+    box-shadow: inset 0 1px 2px rgba(255, 255, 255, 0.8), 0 4px 12px rgba(0, 0, 0, 0.03);
+}
+
+.card-header {
+    display: flex;
+    align-items:center;
+    gap: 12px;
+    margin-bottom: 10px;
+}
+
+.card-header-titles {
+    font-family: 'SF Pro Text Regular';
+}
+.icon-badge {
+    font-family: 'SF Pro Text';
+    background-color: #89F5E7;
+    display: flex;
+    color: black;
+    font-weight: 300px;
+    width: 50px;
+    height: 50px;
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-header h2 {
+    font-size: 40px;
+    font-weight: 20px;
+}
+
+.card-header p {
+    font-size: 20px
+}
+
+/* Input */
+.input-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: #F2F3FF;
+    padding: 16px;
+    border-radius: 20px;
+    margin: 20px;
+}
+.input-group {
+    display: flex;
+    
+    border-radius: 20px;
+    height: auto;
+    align-items: center;
+    display: inline;
+    width: 400px;
+    height: 100px;
+    padding: 10px;
+    box-shadow: inset 0 1px 2px rgba(255, 255, 255, 0.8), 0 4px 12px rgba(0, 0, 0, 0.03);   
+}
+
+.input-group h1 {
+    font-family: 'SF Pro Text';
+}
+
+.input-field {
+    padding-top: 10px;
+    font-family: 'SF Pro Text Regular';
+    font-size: 25px;
+}
+
+.input-field input {
+    border: 0;
+    font-size: 25px;
+    padding-top: 10px;
+    background-color: #FFFFFF;
+}
+
+/* Slider */
+
+.slider-section {
+    margin: 15px;
+    padding: 15px;
+}
+.slider-group {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: #919196;
+    font-family: 'SF Pro Text Regular';
+}
+
+.range-slider {
+    width: 1000px;
+    height: 10px;
+    cursor: pointer;
+    background: #3525CD;
+}
+
+
+/* Presets */
+
+.presets-label {
+    margin: 15px;
+    padding: 15px;
+    color: #919196;
+    font-family: 'SF Pro Text Regular';
+}
+.presets-buttons {
+    margin-left: 15px;
+    padding-left: 15px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.preset-button {
+    font-family: 'SF Pro Text Regular';
+    border-radius: 15px;
+    margin: 10px;
+    padding: 15px;
+    height: 45px;
+    width: 100px;
+
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    border: 0;
+    background-color: #EAEDFF;
+    cursor: pointer;
+
+    font-weight: 400;
+    font-family: 'SF Pro Text Regular';
+}
+
+
+.preset-button:hover {
+    background-color: #4F46E5;
+    color: white;
+}
+
+.preset-button:active {
+    transform: scale(0.98);
+}
+
+/* Distribution */
+
+.dist-header {
+    display: flex;
+    margin: 15px;
+    padding: 15px;
+    justify-content: space-between;
+    font-family: 'SF Pro Text';
+}
+
+.dist-legend {
+    align-items: center;
+    display: flex;
+    margin: 10px;
+    justify-content: space-between;
+    font-family: 'SF Pro Text';
+    gap: 10px;
+}
+
+.dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 10px;
+    display: inline-block;
+}
+
+.dot--blue {
+    background-color: blue;
+}
+
+.dot--cyan {
+    background-color: cyan;
+}
+
+.multi-progress-bar {
+    margin: 30px;
+    height: 20px;
+    background-color: blue;
+    border-radius: 10px;
+    display: flex;
+    overflow: hidden;
+}
+
+.progress-part {
+    background-color: aquamarine;
+    height: 100%;
+}
+
+/* Output grid */
+
+.output-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 12px;
+    margin: 15px;
+    padding: 15px;
+    
+}
+
+.output-section {
+    background-color: #EAEDFF;
+    border-radius: 10px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.out-title {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.out-value {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.out-value--blue {
+    color: blue;
+}
+.out-value--green {
+    color: green;
+}
+
+.out-value--black {
+    color: black;
+}
+
+.out-sub {
+    font-size: 20px;
+}
+
+.out {
+    font-family: 'SF Pro Text Regular';
+}
+/* Percentage card */
+

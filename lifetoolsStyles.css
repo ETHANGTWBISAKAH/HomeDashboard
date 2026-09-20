@@ -1,0 +1,264 @@
+/* --- SF PRO TEXT (Using Display Regular as a temporary substitute) --- */
+@font-face {
+    font-family: 'SF Pro Text Regular';
+    src: url('fonts/sf-pro-display_regular.woff2') format('woff2'); /* This file exists! */
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* --- SF PRO TEXT (Using your working Semibold file as the fallback) --- */
+@font-face {
+    font-family: 'SF Pro Text';
+    src: url('fonts/sf-pro-text_semibold.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SF Pro Text';
+    src: url('fonts/sf-pro-text_semibold.woff2') format('woff2');
+    font-weight: 600;
+    font-style: normal;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+header {
+    height: 50px;
+}
+
+nav li a {
+    display: block;
+    color: #131313;
+    text-align: center;
+    padding-right: 25px;
+    padding-left: 25px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    text-decoration: none;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #FFFFFF;
+
+    display: flex;
+    justify-content: flex-start;
+    min-height: 48px;
+
+}
+
+nav li a:hover {
+    background-color: #dfdddd;
+    opacity: 0.7;
+}
+
+nav {
+    place-items: center;
+    min-height: 48px;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    opacity: 0.7;
+}
+
+nav p {
+    font-size: 12px;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+}
+
+nav img {
+    height: 20px;
+    width: auto;
+    display: block;
+}
+
+
+.temperature-card {
+    background-color: red;
+    border-radius: 20px;
+    margin: 20px;
+    padding: 20px;
+}
+
+.card-header {
+    display: flex;
+    align-items:center;
+    gap: 12px;
+    margin-bottom: 10px;
+}
+
+.card-header-titles {
+    font-family: 'SF Pro Text Regular';
+}
+.icon-badge {
+    background-color: blue;
+    display: flex;
+    color: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-header h2 {
+    font-size: 40px;
+    font-weight: 20px;
+}
+
+.card-header p {
+    font-size: 20px
+}
+/* Display */
+
+.temperature-display {
+    margin: 10px;
+    border-radius: 20px;
+    padding: 15px;
+    font-family: 'SF Pro Text Regular';
+    border: 1px solid #0000;
+    background-color: beige;
+}
+
+.temperature-display .top-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 16px;
+}
+.temperature-display .top-readout {
+    display: flex;
+    align-items: baseline;
+    font-size: 50px;
+}
+
+.scale-markers {
+    display: flex;
+    justify-content: space-between;
+    font-size: 10px;
+    font-family: 'SF Pro Text Regular';
+}
+
+/* Input */
+.input-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: orange;
+    padding: 16px;
+    border-radius: 20px;
+    margin: 20px;
+}
+.input-group {
+display: flex;
+    background-color: blue;
+    border-radius: 20px;
+    height: auto;
+    align-items: center;
+    display: inline;
+    width: 400px;
+    height: 100px
+}
+
+.input-group h1 {
+    font-family: 'SF Pro Text';
+}
+
+.input-field {
+    padding-top: 10px;
+    font-family: 'SF Pro Text Regular';
+}
+
+/* Slider */
+
+.slider-section {
+    margin: 15px;
+    padding: 15px;
+}
+.slider-group {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+    font-weight: 500;
+}
+
+.range-slider {
+    width: 1000px;
+    height: 6px;
+    cursor: pointer;
+    
+}
+
+/* Presets */
+
+.preset-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.preset-button {
+    font-family: 'SF Pro Text Regular';
+    border-radius: 10px;
+    margin: 10px;
+    padding: 15px;
+    height: 100px;
+    width: 150px;
+    text-align: center;
+    align-items: flex-start;
+    border: 0;
+    background-color: #EAEDFF;
+
+    cursor: pointer;
+}
+
+
+.preset-button:hover {
+    background-color: #4F46E5;
+}
+
+.preset-button:active {
+    transform: scale(0.98);
+}
+
+.preset-icon {
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+.preset-title {
+    font-size: 18px;
+
+    margin-bottom: 8px;
+}
+
+.preset-subtitle {
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+/* Distribution */
+
+.multi-progress-bar {
+    margin: 10px;
+    height: 20px;
+    background-color: blue;
+    border-radius: 10px;
+    display: flex;
+    overflow: hidden;
+}
+
+.progress-part {
+    background-color: aquamarine;
+    height: 100%;
+}
+
