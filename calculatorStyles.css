@@ -80,6 +80,11 @@ nav img {
     display: block;
 }
 
+body {
+    background-color: #FAF8FF;
+}
+
+/* calculator */
 .title-text {
     font-family: 'SF Pro Text';
 
@@ -93,6 +98,7 @@ nav img {
     padding: 20px;
     border-radius: 20px;
     margin: 100px;
+    box-shadow: inset 0 1px 2px rgba(255, 255, 255, 0.8), 0 4px 12px rgba(0, 0, 0, 0.03);
 }
 
 #calc-display {
@@ -115,6 +121,7 @@ nav img {
     gap: 8px;
     height: auto;
 }
+
 
 .button {
     background-color: #FFFF;
@@ -155,10 +162,11 @@ nav img {
 /* Presets */
 
 .proportion-card, .percentage-card {
-    background-color: red;
+    background-color: #FFFFFF;
     border-radius: 20px;
     margin: 20px;
     padding: 20px;
+    box-shadow: inset 0 1px 2px rgba(255, 255, 255, 0.8), 0 4px 12px rgba(0, 0, 0, 0.03);
 }
 
 .card-header {
@@ -172,9 +180,11 @@ nav img {
     font-family: 'SF Pro Text Regular';
 }
 .icon-badge {
-    background-color: blue;
+    font-family: 'SF Pro Text';
+    background-color: #89F5E7;
     display: flex;
-    color: white;
+    color: black;
+    font-weight: 300px;
     width: 50px;
     height: 50px;
     border-radius: 20px;
@@ -195,20 +205,22 @@ nav img {
 .input-section {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    background-color: orange;
+    background-color: #F2F3FF;
     padding: 16px;
     border-radius: 20px;
     margin: 20px;
 }
 .input-group {
-display: flex;
-    background-color: blue;
+    display: flex;
+    
     border-radius: 20px;
     height: auto;
     align-items: center;
     display: inline;
     width: 400px;
-    height: 100px
+    height: 100px;
+    padding: 10px;
+    box-shadow: inset 0 1px 2px rgba(255, 255, 255, 0.8), 0 4px 12px rgba(0, 0, 0, 0.03);   
 }
 
 .input-group h1 {
@@ -218,6 +230,14 @@ display: flex;
 .input-field {
     padding-top: 10px;
     font-family: 'SF Pro Text Regular';
+    font-size: 25px;
+}
+
+.input-field input {
+    border: 0;
+    font-size: 25px;
+    padding-top: 10px;
+    background-color: #FFFFFF;
 }
 
 /* Slider */
@@ -231,39 +251,70 @@ display: flex;
     justify-content: space-between;
     margin-bottom: 8px;
     font-weight: 500;
+    color: #919196;
+    font-family: 'SF Pro Text Regular';
 }
 
 .range-slider {
     width: 1000px;
-    height: 6px;
+    height: 10px;
     cursor: pointer;
-    
+    background: #3525CD;
 }
+
 
 /* Presets */
+
+.presets-label {
+    margin: 15px;
+    padding: 15px;
+    color: #919196;
+    font-family: 'SF Pro Text Regular';
+}
+.presets-buttons {
+    margin-left: 15px;
+    padding-left: 15px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
 .preset-button {
     font-family: 'SF Pro Text Regular';
-    border-radius: 10px;
+    border-radius: 15px;
     margin: 10px;
     padding: 15px;
-    height: 40px;
-    width: 60px;
+    height: 45px;
+    width: 100px;
+
+    display: flex;
     text-align: center;
+    justify-content: center;
     border: 0;
     background-color: #EAEDFF;
-
     cursor: pointer;
+
+    font-weight: 400;
+    font-family: 'SF Pro Text Regular';
 }
 
-.preset-button--active {
+
+.preset-button:hover {
     background-color: #4F46E5;
+    color: white;
+}
+
+.preset-button:active {
+    transform: scale(0.98);
 }
 
 /* Distribution */
 
 .dist-header {
     display: flex;
-    margin: 10px;
+    margin: 15px;
+    padding: 15px;
     justify-content: space-between;
     font-family: 'SF Pro Text';
 }
@@ -274,6 +325,7 @@ display: flex;
     margin: 10px;
     justify-content: space-between;
     font-family: 'SF Pro Text';
+    gap: 10px;
 }
 
 .dot {
@@ -292,7 +344,7 @@ display: flex;
 }
 
 .multi-progress-bar {
-    margin: 10px;
+    margin: 30px;
     height: 20px;
     background-color: blue;
     border-radius: 10px;
@@ -311,11 +363,13 @@ display: flex;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 12px;
+    margin: 15px;
+    padding: 15px;
     
 }
 
 .output-section {
-    background-color: brown;
+    background-color: #EAEDFF;
     border-radius: 10px;
     padding: 15px;
     display: flex;
@@ -347,5 +401,8 @@ display: flex;
     font-size: 20px;
 }
 
+.out {
+    font-family: 'SF Pro Text Regular';
+}
 /* Percentage card */
 
