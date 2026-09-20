@@ -215,17 +215,37 @@ display: flex;
     height: 100px;
     width: 150px;
     text-align: center;
-    
+    align-items: flex-start;
     border: 0;
     background-color: #EAEDFF;
 
     cursor: pointer;
 }
 
-.preset-button--active {
+
+.preset-button:hover {
     background-color: #4F46E5;
 }
 
+.preset-button:active {
+    transform: scale(0.98);
+}
+
+.preset-icon {
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+.preset-title {
+    font-size: 18px;
+
+    margin-bottom: 8px;
+}
+
+.preset-subtitle {
+    font-size: 18px;
+    margin-bottom: 8px;
+}
 /* Distribution */
 
 .multi-progress-bar {
