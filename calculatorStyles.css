@@ -211,7 +211,6 @@ body {
     margin: 20px;
 }
 .input-group {
-    display: flex;
     
     border-radius: 20px;
     height: auto;
