@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const radius = 95;
     const circumference = 2 * Math.PI * radius;
-    ringProgress.computedStyleMap.strokeDasharray = circumference;
+    ringProgress.style.strokeDasharray = circumference;
 
     function updateDisplay() {
     const minutes = Math.floor(timeLeft / 60);
@@ -59,13 +59,13 @@ function startTimer() {
     }
 
 function resetTimer() {
-        vlearInterval(timerInterval);
+        clearInterval(timerInterval);
         isRunning = false;
         timeLeft = totalTime;
         updateDisplay();
     }
 
-resetButtons.forEach(button => {
+presetButtons.forEach(button => {
         button.addEventListner('click', () => {
             const match = button.textContent.match(/(\d+)/);
             if (match) {
