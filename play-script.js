@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
 
     const timerDisplay = document.querySelector('.timer-value');
-    const ringProgress = document.querySelector('.ringProgress');
+    const ringProgress = document.querySelector('.ring-progress');
     const sliderValue = document.querySelector('.slider-value');
 
     const startBtn = document.querySelector('.focus-button--start');
@@ -22,14 +22,14 @@ document.addEventListener('DOMContentLoaded', () => {
     ringProgress.style.strokeDasharray = circumference;
 
     function updateDisplay() {
-    const minutes = Math.floor(timeLeft / 60);
-    const seconds = timeLeft % 60;
+        const minutes = Math.floor(timeLeft / 60);
+        const seconds = timeLeft % 60;
 
-    timerDisplay.textContent = `${String(minutes).padStart(2, '0')}:{String(seconds).padStart(2, ;0)}`;
+        timerDisplay.textContent = `${String(minutes).padStart(2, '0')}:${String(seconds).padStart(2, '0')}`;
     sliderValue.textContent = minutes;
 
     const offset = circumference - (timeLeft / totalTime) * circumference;
-    ringProgress.computedStyleMap.strokeDashoffset = offset;
+    ringProgress.style.strokeDashoffset = offset;
 }
 
 function setTimerDuration(mins) {
@@ -51,7 +51,7 @@ function startTimer() {
                 updateDisplay();
             }
             else {
-                clearInteravl(timerInterval);
+                clearInteravl(timerInteravl);
                 isRunning = false;
                 alert("focus session complete!");
             }
@@ -65,11 +65,16 @@ function resetTimer() {
         updateDisplay();
     }
 
+    function pauseTimer(){
+        clearInterval(timerInterval);
+        isRunning = false;
+    }
+
 presetButtons.forEach(button => {
         button.addEventListner('click', () => {
             const match = button.textContent.match(/(\d+)/);
             if (match) {
-                const min = parseInt(match[0], 10);
+                const mins = parseInt(match[0], 10);
                 setTimerDuration(mins);
             }
         });
@@ -77,8 +82,8 @@ presetButtons.forEach(button => {
 
     plusBtn.addEventListener('click', () => {
         let currentMins = Math.floor(totalTime / 60);
-        if (currentMins > 1) {
-            setTimerDuration(currentMins - 1);
+        if (currentMins < 120) {
+            setTimerDuration(currentMins + 1);
         }
     });
 
