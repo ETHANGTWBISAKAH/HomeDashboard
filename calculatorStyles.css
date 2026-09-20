@@ -1,0 +1,63 @@
+/* --- SF PRO TEXT (Using Display Regular as a temporary substitute) --- */
+@font-face {
+    font-family: 'SF Pro Text Regular';
+    src: url('fonts/sf-pro-display_regular.woff2') format('woff2'); /* This file exists! */
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+/* --- SF PRO TEXT (Using your working Semibold file as the fallback) --- */
+@font-face {
+    font-family: 'SF Pro Text';
+    src: url('fonts/sf-pro-text_semibold.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SF Pro Text';
+    src: url('fonts/sf-pro-text_semibold.woff2') format('woff2');
+    font-weight: 600;
+    font-style: normal;
+}
+
+
+.calculator-card {
+    background-color: #FFFFF;
+    padding: 20px;
+    border-radius: 20px;
+    margin: 20px;
+    font-family: 'SF Pro Text';
+}
+
+.calc-display {
+    background-color: #FFFF;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    overflow: hidden;
+}
+
+.calculator-keyboard {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 8px;
+}
+
+.button {
+    background-color: #FFFF;
+    border-radius: 8px;
+    border: 0;
+    cursor: pointer;
+}
+
+.button--clear {
+    background-color: red;
+}
+.button--operator {
+    background-color: blue;
+}
+.button:hover {
+    opacity: 0.7;
+}
