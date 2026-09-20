@@ -71,7 +71,7 @@ function resetTimer() {
     }
 
 presetButtons.forEach(button => {
-        button.addEventListner('click', () => {
+        button.addEventListener('click', () => {
             const match = button.textContent.match(/(\d+)/);
             if (match) {
                 const mins = parseInt(match[0], 10);
