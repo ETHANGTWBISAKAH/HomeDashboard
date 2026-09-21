@@ -1,5 +1,5 @@
-const celsiusInput = document.querySelector('.input-section input:nth-of-types(1)') || document.querySelectorAll('.input-feild input')[0];
-const fahrenhitInput = document.querySelector('input-section input:nth-of-type(2') || document.querySelectorAll;; ('input-feild input')[1];
+const celsiusInput = document.querySelector('.input-section .input-group:nth-child(1) input')
+const fahrenhitInput = document.querySelector('input-section .input-group:nth-child(2) input') 
 const rangeSlider = document.querySelector('.range-slider');
 const displayValue = document.querySelector('.display-value');
 const rangeText = document.querySelector('.range-text');
@@ -25,16 +25,21 @@ if (rangeSlider) {
 if (celsiusInput) {
     celsiusInput.addEventListener('input', (e) => {
         const val = parseFloat(e.target.value);
-        if (!isNaN(val)) updateTemperature(val, false);
+        if (!isNaN(val)){
+             updateTemperature(val, false);
+             const f = (val * 9/5) + 32;
+             if (fahrenhitInput) fahrenhitInput.value = f.toFixed(1);
+        }
     });
 }
 
 if (fahrenhitInput) {
     fahrenhitInput.addEventListener('input', (e) => {
-        const val = parseFloat(e.target, value);
+        const val = parseFloat(e.target.value);
         if (!isNaN(val)) {
             const c = (val - 32) * 5 / 9;
             updateTemperature(c, false);
+            if (celsiusInput) celsiusInput.value = c.toFixed(1);
         }
     });
 }
@@ -45,15 +50,18 @@ if (rangeSlider) {
     });
 }
 
-const preset = [
-    { temp: 0 }, { temp: 20 }, { temp: 35 }, { temp: 100 }
+const presets = [
+    { temp: 0 },
+    { temp: 20 }, 
+    { temp: 35 }, 
+    { temp: 100 }
 ];
 
 presetButtons.forEach((btn, index) => {
     btn.addEventListener('click', () => {
         presetButtons.forEach(b => b.classList.remove('preset-button--active'));
         btn.classList.add('preset-button--active');
-        if (preset[index]) {
+        if (presets[index]) {
             updateTemperature(presets[index].temp, true);
         }
     });
@@ -72,22 +80,22 @@ presetButtons.forEach((btn, index) => {
 
 const birthYearSlider = document.querySelector('.birthyear-slider input[type="range"]');
 const birthYearDisplay = document.querySelector('.birthyear-legend h3');
-const minusBtn = document.querySelector('yearbutton.minus');
-const plusBtn = document.querySelector(',yearbutton.plus');
+const minusBtn = document.querySelector('.yearbutton.minus');
+const plusBtn = document.querySelector('.yearbutton.plus');
 const solarCycleAmount = document.querySelector('.solar-cycles-amount');
-const daysLivedAmount = document.querySelector('days-lived-amount');
-const hoursLivedText = document.querySelector('life-lived-groups:nth-child(2) p');
+const daysLivedAmount = document.querySelector('.days-lived-amount');
+const hoursLivedText = document.querySelector('.life-lived-group:nth-child(2) p');
 const countdownDaysText = document.querySelector('.count-down-header p');
-const countdownFooterText = document.querySelector('.count-sown-footer p');
+const countdownFooterText = document.querySelector('.count-down-footer p');
 
 
 function updateAgeCalculation(year) {
     const birthYear = parseInt(year);
-    const currentYear = new Date().gitFullYear();
-    const age = currrentYear - birthYear;
+    const currentYear = new Date().getFullYear();
+    const age = currentYear - birthYear;
 
     if (birthYearDisplay) birthYearDisplay.textContent = birthYear;
-    if (birthYearSlider) birthYearSlider.textContent = birthYear;
+    if (birthYearSlider) birthYearSlider.value = birthYear;
 
     const daysLived = Math.round(age * 365.25);
     const hoursLived = daysLived * 24;
@@ -97,7 +105,7 @@ function updateAgeCalculation(year) {
     if (hoursLivedText) hoursLivedText.textContent = `~${hoursLived.toLocaleString()} hours`;
 
     if (countdownDaysText && countdownFooterText) {
-        const nectAge = age + 1;
+        const nextAge = age + 1;
         countdownFooterText.textContent = `turning ${nextAge}`;
         countdownDaysText.textContent = `${Math.floor(Math.random() * 300) + 20} days`;
     }
