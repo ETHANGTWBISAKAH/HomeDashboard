@@ -10,5 +10,7 @@ Omnitool is a fast, lightweight and bloatware-free web application built with HT
 - Proportion finder
 - Life tools and Ambient Converters
 - Focus Pod/Focus timer
+- calculator
+- presets options
+- temperature studio
 
-## Installation Setup
