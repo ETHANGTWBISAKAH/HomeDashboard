@@ -51,9 +51,9 @@ body {
 
 .links-land a {
     text-decoration: none;
-    color:rgb(161, 160, 160);
-    font-size:14px;
-    font-weight:600;
+    color: rgb(161, 160, 160);
+    font-size: 14px;
+    font-weight: 600;
 }
 
 .links-land a:hover {
@@ -72,9 +72,10 @@ body {
 }
 
 .dashboard-btn:hover {
-    background-color: aqua;
+    background-color: rgb(105, 105, 213);
     transform: translateY(-2px);
 }
+/* git add . */
 
 /* hero section */
 
@@ -251,56 +252,267 @@ body {
     margin-bottom: 15px;
 }
 
-.idea-title span{
-    color:#2563eb;
+.idea-title span {
+    color: #2563eb;
 }
 
-.idea-desxc{
-    font-size:15px;
-    color:#475569;
-    line-height:1.5px;
+.idea-desxc {
+    font-size: 15px;
+    color: #475569;
+    line-height: 1.5px;
 }
 
-.features-grid{
-    display:grid;
+.features-grid {
+    display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap:25px;
+    gap: 25px;
 }
 
-.feature-card{
-    background:white;
-    border:1px solid rgb(232, 223, 223);
-    border-radius:15px;
-    padding:30px 20px;
-    text-align:center;
+.feature-card {
+    background: white;
+    border: 1px solid rgb(232, 223, 223);
+    border-radius: 15px;
+    padding: 30px 20px;
+    text-align: center;
     transition: transform 0.2 ease, box-shadow 0.2 ease;
 }
 
-.feature-card:hover{
+.feature-card:hover {
     transform: translateY(-5px);
-    box-shadow:0 10px 20px rgba(225, 225, 225, 0.5);
+    box-shadow: 0 10px 20px rgba(225, 225, 225, 0.5);
 }
 
-.feature-icon{
-    width:50px;
-    height:50px;
-    border-radius:13px;
-    display:flex;
-    align-items:center;
-    justify-content:cente;
-    font-size:20px;
-    margin:0 auto 20px auto;
+.feature-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 13px;
+    display: flex;
+    align-items: center;
+    justify-content: cente;
+    font-size: 20px;
+    margin: 0 auto 20px auto;
 }
 
-.features-card h3{
+.features-card h3 {
     font-size: 15px;
-    font-weight:500px;
-color:#0f172a;
-margin-bottom:10px;
+    font-weight: 500px;
+    color: #0f172a;
+    margin-bottom: 10px;
 }
 
-.features-card p{
-    font-size:15px;
-    color:#64748b;
+.features-card p {
+    font-size: 15px;
+    color: #64748b;
     line-height: 1.5;
+}
+
+
+/* about page  */
+
+.idk {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    height: 60px;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.about-a {
+    text-decoration: none !important;
+    color: white;
+    background: #2e61f0;
+    padding: 20px;
+    border: 2px solid black;
+    border-radius: 20px;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-a:hover {
+    background: rgb(70, 70, 233);
+}
+
+.about-hfour {
+    color: grey;
+}
+
+.about-us-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pppp-div {
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 2000px;
+}
+
+
+.pppp-span {
+    color: #1d4ed8
+}
+
+.yoyo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.box {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    border-radius: 20px;
+    height: 300px;
+    padding: 10px;
+    margin: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.box1 {
+    border: 1px solid black;
+    height: 90%;
+    width: 500px;
+    padding: 50px;
+    text-decoration: solid;
+    border-radius: 20px;
+}
+
+.box1-1 {
+    color: grey;
+}
+
+.box1-2,
+.box-2-2,
+.box-3-2,
+.box-4-2 {
+    font-size: xx-large;
+
+}
+
+.box1-3,
+.box-2-3,
+.box-3-3,
+.box-4-3 {
+    color: grey;
+}
+
+.box2,
+.box3,
+.box4 {
+    border: 1px solid black;
+    height: 90%;
+    width: 4fr;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.box-2-1,
+.box-3-1,
+.box-4-1 {
+    color: #2563eb;
+}
+
+
+/* team */
+
+.hh-div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+.hh {
+    color: white;
+    background: #1d4ed8;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+.hh:hover {
+    background: rgb(73, 73, 244);
+}
+
+.t-div {
+    color: grey;
+    text-align: center;
+}
+
+.built-div {
+    text-align: center;
+    font-size: xx-large;
+}
+
+.block-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.am {
+    font-size: x-large;
+}
+
+.block-div-1,
+.block-div-2 {
+    border: 1px solid rgb(195, 194, 194);
+    background: rgb(217, 217, 217);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+/* feature tab */
+
+.something-div{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.something {
+    color: white;
+    background: #1d4ed8;
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 20px;
+    text-align: center;
+    margin: 10px;
+    text-align: center;
+    text-decoration: none;
+}
+
+/* feature  */
+
+.feat-p{
+    text-align:center;
+    letter-spacing:1.5;
+    color:grey;
+}
+
+.every-p{
+    font-size:70px;
+    text-align:center;
+}
+
+.every-span{
+    color:#2563eb;
+}
+
+.rest-p{
+    text-align:center;
+    color:grey;
+    font-size:50px;
 }

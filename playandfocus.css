@@ -87,7 +87,7 @@ nav img {
 /* Start */
 
 .focus-card {
-    background-color: #FFFFF;
+    background-color: #FFFF;
     border-radius: 20px;
     margin: 20px;
     padding: 20px;
@@ -172,13 +172,13 @@ nav img {
 .timer-value {
     font-size: 50px;
     font-weight: 800;
-    color: beige;
+    color: rgb(77, 72, 55);
 }
 
 .timer-label {
     font-size: 20px;
     font-weight: 700;
-    color: beige;
+    color:  rgb(77, 71, 55);
     letter-spacing: 1px;
     margin-top: 10px;
 }   
@@ -193,7 +193,7 @@ nav img {
     margin: 15px;
     padding: 15px;
 
-    background-color: aqua;
+    background-color: rgb(255, 153, 0);
     font-family: 'SF Pro Text Regular';
 }
 
