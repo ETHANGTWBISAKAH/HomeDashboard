@@ -86,7 +86,7 @@ nav img {
 
 
 .temperature-card, .age-card, .decision-card {
-    background-color: #FFFFF;
+    background-color: #FFF;
     border-radius: 20px;
     margin: 20px;
     padding: 20px;
@@ -125,7 +125,7 @@ nav img {
 }
 /* Display */
 
-.temperature-display, {
+.temperature-display {
     margin: 10px;
     border-radius: 20px;
     padding: 15px;
@@ -206,7 +206,7 @@ nav img {
 .range-slider {
     width: 1000px;
     height: 6px;
-    cursor: pointer;mn
+    cursor: pointer;
     background: #3525CD;
 }
 
