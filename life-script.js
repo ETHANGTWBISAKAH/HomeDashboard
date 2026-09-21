@@ -2,16 +2,15 @@ const celsiusInput = document.querySelector('.input-section input:nth-of-types(1
 const fahrenhitInput = document.querySelector('input-section input:nth-of-type(2') || document.querySelectorAll;; ('input-feild input')[1];
 const rangeSlider = document.querySelector('.range-slider');
 const displayValue = document.querySelector('.display-value');
-const rangeText = DocumentFragment.querySelector('.range-text')
+const rangeText = document.querySelector('.range-text');
 const presetButtons = document.querySelectorAll('.preset-button');
 
-function updateTemperature(celsius, update = true) {
-    const c = parseFLoat(celsius);
+function updateTemperature(celsius, updateInputs = true) {
+    const c = parseFloat(celsius);
     const f = (c * 9 / 5) + 32;
 
     if (displayValue) displayValue.textContent = c.toFixed(1);
-    if (rangeText) rangeText.textContent = '${c.toFixed(1)'
-} c / ${ f.toFixed(1) } f';
+    if (rangeText) rangeText.textContent = `${c.toFixed(1)} c / ${ f.toFixed(1) } f`; 
 
 if (updateInputs) {
     if (celsiusInput) celsiusInput.value = c.toFixed(1);
@@ -105,13 +104,13 @@ function updateAgeCalculation(year) {
 }
 
 if (birthYearSlider){
-    birthYearSlider,addEventListener('input', (e) => {
+    birthYearSlider.addEventListener('input', (e) => {
         updateAgeCalculation(e.target.value);
     });
 }
 
 if (plusBtn && birthYearSlider){
-    plusBtn.addEventListener('click', => {
+    plusBtn.addEventListener('click', () => {
         birthYearSlider.value = parseInt(birthYearSlider.value) + 1;
         updateAgeCalculation(birthYearSlider.value);
     });
