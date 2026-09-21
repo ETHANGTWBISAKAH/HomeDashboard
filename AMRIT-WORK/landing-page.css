@@ -72,9 +72,10 @@ body {
 }
 
 .dashboard-btn:hover {
-    background-color: aqua;
+    background-color: rgb(105, 105, 213);
     transform: translateY(-2px);
 }
+/* git add . */
 
 /* hero section */
 
@@ -352,7 +353,6 @@ body {
     font-weight: 2000px;
 }
 
-.pppp {}
 
 .pppp-span {
     color: #1d4ed8
